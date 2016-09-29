@@ -38,7 +38,7 @@ public class SamPromotionTest {
 
     @DataProvider(name = "getSamSkus")
     public static Object[][] getSamSkus() throws IOException {
-        return getDataFromCSV("D:\\app\\sam_promotion\\src\\test\\resources\\samSkus.csv");
+        return getDataFromCSV("src/test/resources/samSkus.csv");
 
     }
 
@@ -95,6 +95,7 @@ public class SamPromotionTest {
         BufferedWriter bw;
         BufferedReader br;
         try {
+
             bw = new BufferedWriter(new FileWriter("./result" + NOW +
                     ".csv", true));
             br = new BufferedReader(new FileReader("./result" + NOW +
